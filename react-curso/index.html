@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ut-8"/>
+        <title>Javascript Basico</title>
+    <head>
+    <body>
+        <h1>Básico de JS</h1>
+        <script>
+        //const - let
+        //comparadores
+        //metodos arrays: forEach, numeros.map, numeros.filter, numeros.find
+
+        //function print ()
+        // return console.log
+        // };
+
+        // atalho: selecionar todo o texto e apertar alt + shift + A para comentar
+        
+
+        /* const nome = 'Thali';
+        console.log(nome);
+        let idade = 25;
+        idade = idade++;
+        console.log(idade); */
+
+        /* const numero = 1;
+        const texto = '1';
+        console.log(numero === texto);
+        console.log(numero + texto); */
+
+        /* const numeros = [1,2,3,4];
+        let numerosSomados = []
+        numeros.forEach(item => numerosSomados.push(item+1));
+        console.log(numeros);
+        console.log(numerosSomados); */
+
+        /* const pessoa = { nome: 'Thalina', idade: 25 };
+        const pessoa2 = { nome: 'Leonardo', idade: 24 };
+        const pessoas = [pessoa, pessoa2];
+        console.table(pessoas); // exibir em tabela
+        const leonardo = pessoas.find(p => p.nome === 'Leonardo');
+        console.log(leonardo); */
+        
+        /* function print () {
+            return console.log;
+        }
+        const log = print();
+        log('ola'); */
+
+        /* function soma(type) {
+            if (type === '5') {
+                return valor => valor + 5;
+            } 
+            return valor => valor + 5;
+        }
+        console.log(soma()(10)); */
+
+        // POO
+
+        class Aluno {
+            constructor(nome, matricula) {
+                this.nome = nome;
+                this.matricula = matricula;
+            }
+            falarMatricula() {
+                console.log('Minha matricula é: '+ this.matricula);
+            }
+        }
+
+        const thali = new Aluno ('Thali', 123);
+        thali.falarMatricula();
+        </script>
+    </body>
+</html>
